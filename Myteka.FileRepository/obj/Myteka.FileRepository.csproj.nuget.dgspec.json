@@ -1,0 +1,120 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Code\\Myteka\\Myteka.FileRepository\\Myteka.FileRepository.csproj": {}
+  },
+  "projects": {
+    "D:\\Code\\Myteka\\Myteka.FileRepository\\Myteka.FileRepository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Code\\Myteka\\Myteka.FileRepository\\Myteka.FileRepository.csproj",
+        "projectName": "Myteka.FileRepository",
+        "projectPath": "D:\\Code\\Myteka\\Myteka.FileRepository\\Myteka.FileRepository.csproj",
+        "packagesPath": "C:\\Users\\fiste\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\Myteka\\Myteka.FileRepository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\fiste\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Code\\Myteka\\Myteka.Models\\Myteka.Models.csproj": {
+                "projectPath": "D:\\Code\\Myteka\\Myteka.Models\\Myteka.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Code\\Myteka\\Myteka.Models\\Myteka.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Code\\Myteka\\Myteka.Models\\Myteka.Models.csproj",
+        "projectName": "Myteka.Models",
+        "projectPath": "D:\\Code\\Myteka\\Myteka.Models\\Myteka.Models.csproj",
+        "packagesPath": "C:\\Users\\fiste\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\Myteka\\Myteka.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\fiste\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

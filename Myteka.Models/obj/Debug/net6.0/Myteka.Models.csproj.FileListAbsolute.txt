@@ -1,0 +1,12 @@
+D:\Code\Myteka\Myteka.Models\bin\Debug\net6.0\Myteka.Models.deps.json
+D:\Code\Myteka\Myteka.Models\bin\Debug\net6.0\Myteka.Models.dll
+D:\Code\Myteka\Myteka.Models\bin\Debug\net6.0\Myteka.Models.pdb
+D:\Code\Myteka\Myteka.Models\obj\Debug\net6.0\Myteka.Models.csproj.AssemblyReference.cache
+D:\Code\Myteka\Myteka.Models\obj\Debug\net6.0\Myteka.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\Myteka\Myteka.Models\obj\Debug\net6.0\Myteka.Models.AssemblyInfoInputs.cache
+D:\Code\Myteka\Myteka.Models\obj\Debug\net6.0\Myteka.Models.AssemblyInfo.cs
+D:\Code\Myteka\Myteka.Models\obj\Debug\net6.0\Myteka.Models.csproj.CoreCompileInputs.cache
+D:\Code\Myteka\Myteka.Models\obj\Debug\net6.0\Myteka.Models.dll
+D:\Code\Myteka\Myteka.Models\obj\Debug\net6.0\refint\Myteka.Models.dll
+D:\Code\Myteka\Myteka.Models\obj\Debug\net6.0\Myteka.Models.pdb
+D:\Code\Myteka\Myteka.Models\obj\Debug\net6.0\ref\Myteka.Models.dll
