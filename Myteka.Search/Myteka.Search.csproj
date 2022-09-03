@@ -4,6 +4,8 @@
         <TargetFramework>net6.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);1591</NoWarn>
     </PropertyGroup>
 
     <ItemGroup>
@@ -11,8 +13,12 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Myteka.Communication\Myteka.Communication.csproj" />
+      <ProjectReference Include="..\Myteka.Configuration\Myteka.Configuration.csproj" />
       <ProjectReference Include="..\Myteka.Models\Myteka.Models.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Src\Interfaces\ICash.cs" />
     </ItemGroup>
 
 </Project>

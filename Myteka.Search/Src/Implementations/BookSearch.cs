@@ -1,21 +1,37 @@
-using Myteka.Communication;
-using Myteka.Communication.Controllers.Infrastructure;
+using System.Text.Json;
+using Myteka.Configuration.Models;
 using Myteka.Models.ExternalModels;
 using Myteka.Search.Interfaces;
+using IConfiguration = Myteka.Configuration.IConfiguration;
 
 namespace Myteka.Search.Implementations;
 
 public class BookSearch : IBookSearch
 {
-    BookController _connection;
+    HttpClient httpClient = new();
+    IConfiguration configuration;
+    private ConfigModel Config { get; }
+
     public BookSearch()
     {
-        _connection = new InfrastructureConnection().Book;
+        configuration = new Configuration.Configuration();
+        
+        Config = configuration.GetConfig();
     }
     
     public IEnumerable<BookExternal> SearchByTitle(string title)
     {
-        IEnumerable<BookExternal> allBooks = _connection.GetAllBooks();
+        string url = Config.Urls.Infrastructure.Split(';')[0] + "/api/" + Config.EndPoints.Infrastructure.Book.GetAllBooks;
+
+        var response = httpClient
+            .GetStringAsync(url)
+            .Result;
+
+
+        List<BookExternal> allBooks = JsonSerializer.Deserialize<List<BookExternal>>(response, new JsonSerializerOptions
+        {
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+        });
         
         var results  = allBooks.Where(book => book.Title.ToLower().Contains(title.ToLower()));
         if (results.Any())
@@ -23,11 +39,12 @@ public class BookSearch : IBookSearch
             return results;
         }
         
-        return null;
+        return new List<BookExternal>();
     }
 
     public IEnumerable<BookExternal> SearchByDescription(string searchString)
     {
+        return new List<BookExternal>();
         // TODO: Сделать поиск
     }
 }
