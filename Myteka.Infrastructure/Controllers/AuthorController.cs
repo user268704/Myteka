@@ -145,7 +145,7 @@ public class AuthorController : BaseController
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public IActionResult Create(AuthorExternal author)
+    public IActionResult Create(AuthorRegisterModel author)
     {
         try
         {

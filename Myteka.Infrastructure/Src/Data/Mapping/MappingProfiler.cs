@@ -35,9 +35,11 @@ public class MappingProfiler : Profile
         
         // Register models mapping
         CreateMap<Book, BookRegisterModel>();
+        CreateMap<Author, AuthorRegisterModel>();
         CreateMap<Content, ContentRegisterModel>();
 
         CreateMap<BookRegisterModel, Book>();
+        CreateMap<AuthorRegisterModel, Author>();
         CreateMap<ContentRegisterModel, Content>();
     }
     
