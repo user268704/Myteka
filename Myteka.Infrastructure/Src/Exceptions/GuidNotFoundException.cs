@@ -3,10 +3,10 @@ namespace Myteka.Infrastructure.Exceptions;
 /// <summary>
 /// Occurs in the absence of the desired result
 /// </summary>
-public class GuidNotValidException : Exception
+public class GuidNotFoundException : Exception
 {
     public string Message { get; set; }
-    public GuidNotValidException(string message)
+    public GuidNotFoundException(string message)
     {
         Message = message;
     }

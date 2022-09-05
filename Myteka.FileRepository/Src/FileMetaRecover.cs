@@ -4,7 +4,7 @@ namespace Myteka.FileRepository;
 
 public class FileMetaRecover
 {
-    public Content Recover(byte[] file, Content meta)
+    public ContentMetadata Recover(byte[] file, Content meta)
     {
         if (meta.Metadata == null) 
             meta.Metadata = new();
@@ -13,9 +13,9 @@ public class FileMetaRecover
         TypeSet(meta);
         UpdateDateSet(meta);
         
-        return meta;
+        return meta.Metadata;
     }
-    
+
     private void UpdateDateSet(Content meta)
     {
         meta.Metadata.UpdateDate = DateTime.Now;

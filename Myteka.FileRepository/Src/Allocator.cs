@@ -1,3 +1,5 @@
+using Myteka.Configuration;
+
 namespace Myteka.FileRepository;
 
 public class Allocator
@@ -7,7 +9,9 @@ public class Allocator
         string idString = fileId.ToString();
         
         string folderName = idString.Substring(0, 3);
-        string folderPath = @"D:\Myteka\Files\" + folderName;
+
+        var conf = Config.GetConfig();
+        string folderPath = conf.Get().Global.FileSavePath + folderName;
 
         return folderPath;
     }

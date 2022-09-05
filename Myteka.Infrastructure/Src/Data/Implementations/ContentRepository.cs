@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using Myteka.FileRepository;
 using Myteka.Infrastructure.Data.Interfaces;
 using Myteka.Infrastructure.Exceptions;
@@ -18,7 +19,7 @@ public class ContentRepository : IContentRepository
     /// </summary>
     /// <param name="fileId">id of the object being searched for</param>
     /// <exception cref="Exception">Occurs if the object is not in the database</exception>
-    /// <exception cref="GuidNotValidException">Occurs if the requested object does not exist</exception>
+    /// <exception cref="GuidNotFoundException">Occurs if the requested object does not exist</exception>
     public byte[] DownloadFile(Guid fileId)
     {
         if (CheckById(fileId))
@@ -29,11 +30,11 @@ public class ContentRepository : IContentRepository
             return fileResult;
         }
 
-        throw new GuidNotValidException("Content not found");
+        throw new GuidNotFoundException("Content not found");
     }
     
     /// <exception cref="Exception">Occurs if the url is not in the database</exception>
-    /// <exception cref="GuidNotValidException">Occurs if the requested object does not exist</exception>
+    /// <exception cref="GuidNotFoundException">Occurs if the requested object does not exist</exception>
     public string GetContentUrl(Guid contentId)
     {
         if (CheckById(contentId))
@@ -45,7 +46,7 @@ public class ContentRepository : IContentRepository
             throw new Exception("Url is undefined");
         }
         
-        throw new GuidNotValidException("Content not found");
+        throw new GuidNotFoundException("Content not found");
     }
 
     public Guid UploadFile(byte[] file, string fileName)
@@ -63,7 +64,8 @@ public class ContentRepository : IContentRepository
             throw new FileAlreadyExistsException(fileName);
 
         fileSaver.Save(contentDesc, file);
-        fileMetaRecover.Recover(file, contentDesc);
+        var meta = fileMetaRecover.Recover(file, contentDesc);
+        contentDesc.Metadata = meta;
 
         _dataContext.Content.Add(contentDesc);
         _dataContext.SaveChanges();
@@ -87,36 +89,47 @@ public class ContentRepository : IContentRepository
         throw new NotImplementedException();
     }
 
-    public void DeleteContent(Guid contentId)
+    public void RemoveContent(Guid contentId)
     {
-        throw new NotImplementedException();
+        var deletedObject = _dataContext.Content.Find(contentId);
+        if (deletedObject != null)
+        {
+            _dataContext.Content.Remove(deletedObject);
+            return;
+        }
+        
+        throw new GuidNotFoundException("Content not found");
     }
 
-    public Content GetContent(Guid contentId)
+    public async Task<Content> GetContentAsync(Guid contentId)
     {
         if (CheckById(contentId)) 
         {
-            var content = _dataContext.Content.Find(contentId);
-            
-            return content;
+            var content = await _dataContext.Content
+                .Include(c => c.Metadata)
+                .ToListAsync();
+
+            return content.Find(content => content.Id == contentId);
         }
         
-        throw new GuidNotValidException("Content not found");
+        throw new GuidNotFoundException("Content not found");
     }
+    
+    
 
-    /// <exception cref="GuidNotValidException">Occurs if the requested object does not exist</exception>
+    /// <exception cref="GuidNotFoundException">Occurs if the requested object does not exist</exception>
     public ContentMetadata GetMetadata(Guid contentId)
     {
         if (CheckById(contentId))
             return _dataContext.Content.Find(contentId).Metadata;
 
-        throw new GuidNotValidException("Content not found");
+        throw new GuidNotFoundException("Content not found");
     }
 
     /// <summary>
     /// Updates the metadata of the object
     /// </summary>
-    /// <exception cref="GuidNotValidException">Occurs if the requested object does not exist</exception>
+    /// <exception cref="GuidNotFoundException">Occurs if the requested object does not exist</exception>
     public void UpdateMetadata(Guid contentId, ContentMetadata newMetadata)
     {
         if (CheckById(contentId) && newMetadata != null)
@@ -128,7 +141,7 @@ public class ContentRepository : IContentRepository
             return;
         }
         
-        throw new GuidNotValidException("Request not valid");
+        throw new GuidNotFoundException("Request not valid");
     }
     
     private bool CheckByName(string name) => 
@@ -136,4 +149,19 @@ public class ContentRepository : IContentRepository
 
     public bool CheckById(Guid contentId) => 
         _dataContext.Content.Any(c => c.Id == contentId);
+
+    public IEnumerable<Content> GetAll()
+    {
+        var allContent = _dataContext.Content;
+
+        return allContent;
+    }
+
+    public IEnumerable<Content> GetAll(int count)
+    {
+        var content = _dataContext.Content
+            .Take(count);
+
+        return content;
+    }
 }

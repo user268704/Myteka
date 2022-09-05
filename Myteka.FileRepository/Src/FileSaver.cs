@@ -4,6 +4,11 @@ namespace Myteka.FileRepository;
 
 public class FileSaver
 {
+    /// <summary>
+    /// Main method to save the file
+    /// </summary>
+    /// <param name="contentData"></param>
+    /// <param name="file"></param>
     public void Save(Content contentData, byte[] file)
     {
         string filePath = Allocator.GetFilePath(contentData.Id);

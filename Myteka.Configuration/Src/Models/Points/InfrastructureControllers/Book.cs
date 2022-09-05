@@ -1,11 +1,10 @@
-namespace Myteka.Communication.Data.Models;
+namespace Myteka.Configuration.Models.Points.InfrastructureControllers;
 
-public class BookEndPoints
+public class Book
 {
-    public string Domen { get; set; }
     public string GetBookByTheme { get; set; }
     public string GetBookById { get; set; }
     public string GetAllBooks { get; set; }
     public string CreateBook { get; set; }
-    public string DeleteBook { get; set; }
+    public string RemoveBook { get; set; }
 }

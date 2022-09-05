@@ -2,7 +2,6 @@ using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Myteka.Infrastructure.Data.Interfaces;
 using Myteka.Infrastructure.Exceptions;
-using Myteka.Models.ExternalModels;
 using Myteka.Models.InternalModels;
 
 namespace Myteka.Infrastructure.Controllers;
@@ -25,17 +24,17 @@ public class ContentController : BaseController
     [Route("download/{fileId}")]
     [HttpGet]
     [Produces("application/octet-stream")]
-    public IActionResult DownloadFile(Guid fileId)
+    public async Task<IActionResult> DownloadFile(Guid fileId)
     {
         try
         {
             byte[] file = _contentRepository.DownloadFile(fileId);
 
-            Content content =  _contentRepository.GetContent(fileId);
+            Content content =  await _contentRepository.GetContentAsync(fileId);
             
             return File(file, "application/octet-stream", content.FileName);
         }
-        catch (GuidNotValidException)
+        catch (GuidNotFoundException)
         {
             return NotFound();
         }
@@ -86,9 +85,35 @@ public class ContentController : BaseController
         return Ok();
     }
     
-    [HttpPost]
-    public IActionResult DeleteBook(Guid fileId)
+    /// <summary>
+    /// Remove book from server
+    /// </summary>
+    /// <param name="fileId"></param>
+    /// <returns></returns>
+    [HttpDelete]
+    public IActionResult RemoveBook(Guid fileId)
     {
-        return Ok();
+        try
+        {
+            _contentRepository.RemoveContent(fileId);
+
+            return Ok();
+        }
+        catch (GuidNotFoundException)
+        {
+            return NotFound();
+        }
+    }
+    
+    [Route("get/all")]
+    [HttpGet]
+    public IEnumerable<Content> GetAllContent(int? count)
+    {
+        if (count == null)
+        {
+            return _contentRepository.GetAll();
+        }
+
+        return _contentRepository.GetAll((int)count);
     }
 }

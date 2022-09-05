@@ -18,6 +18,11 @@ public class DataContext : DbContext
         //Configuration = configuration;
     }
 
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Content>().Navigation(c => c.Metadata).AutoInclude();
+    }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         //optionsBuilder.UseNpgsql(Configuration.GetConnectionString("Npgsql"));

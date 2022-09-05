@@ -3,15 +3,35 @@ using Myteka.Configuration.Models;
 
 namespace Myteka.Configuration;
 
-public class Configuration : IConfiguration
+public class Config : IConfiguration
 {
+    private static Config Entity { get; set; }
+    private ConfigModel MainModel { get; }
+
     private string ConfigText { get; set; }
 
-    public ConfigModel GetConfig()
+    private Config()
     {
         Init();
 
-        return Deserialize(ConfigText);
+        MainModel = Deserialize(ConfigText);
+    }
+
+    public static Config GetConfig()
+    {
+        if (Entity == null)
+        {
+            Entity = new();
+
+            return Entity;
+        }
+        
+        return Entity;
+    }
+    
+    public ConfigModel Get()
+    {
+        return MainModel;
     }
 
     private void Init()

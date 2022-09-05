@@ -135,12 +135,12 @@ public class BookController : BaseController
     /// <response code="200">The book has been deleted successfully</response>
     /// <response code="400">There is no such book</response>
     /// <response code="403">No rights to delete</response>
-    [Route("delete/{id}")]
+    [Route("remove/{id}")]
     [HttpDelete]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status403Forbidden)]
-    public IActionResult DeleteBook(Guid id)
+    public IActionResult RemoveBook(Guid id)
     {
         if (_bookRepository.CheckById(id))
         {

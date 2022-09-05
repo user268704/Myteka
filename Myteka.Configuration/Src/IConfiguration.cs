@@ -4,5 +4,5 @@ namespace Myteka.Configuration;
 
 public interface IConfiguration
 {
-    ConfigModel GetConfig();
+    ConfigModel Get();
 }
