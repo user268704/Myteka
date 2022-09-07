@@ -19,498 +19,107 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="937f54e0-1017-496b-bef6-1c9e879944c7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Myteka/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Myteka/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Myteka/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Myteka/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Myteka/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/Myteka.Communication.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/Src/Connections/InfrastructureConnection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/Src/Data/Config.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/Src/Data/Models/BookEndPoints.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/Src/Init.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/Src/Interfaces/IConnection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/Src/Interfaces/IContentConnection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/Src/Interfaces/IInfrastructureConnection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/Src/Interfaces/ISearchConnection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/Src/Interfaces/IUserConnection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/Src/Services/Infrastructure/AudioController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/Src/Services/Infrastructure/AuthorController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/Src/Services/Infrastructure/BookController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/Src/Services/Infrastructure/ContentController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/Src/Services/Infrastructure/UserController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/obj/Debug/net6.0/Myteka.Communication.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/obj/Debug/net6.0/Myteka.Communication.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/obj/Debug/net6.0/Myteka.Communication.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/obj/Debug/net6.0/Myteka.Communication.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/obj/Debug/net6.0/Myteka.Communication.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/obj/Debug/net6.0/Myteka.Communication.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/obj/Myteka.Communication.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/obj/Myteka.Communication.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/obj/Myteka.Communication.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Communication/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/Myteka.Content.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/bin/Debug/net6.0/Microsoft.OpenApi.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/bin/Debug/net6.0/Myteka.Content.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/bin/Debug/net6.0/Myteka.Content.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/bin/Debug/net6.0/Myteka.Content.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/bin/Debug/net6.0/Myteka.Content.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/bin/Debug/net6.0/Myteka.Content.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/bin/Debug/net6.0/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/bin/Debug/net6.0/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/Debug/net6.0/Myteka.Content.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/Debug/net6.0/Myteka.Content.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/Debug/net6.0/Myteka.Content.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/Debug/net6.0/Myteka.Content.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/Debug/net6.0/Myteka.Content.MvcApplicationPartsAssemblyInfo.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/Debug/net6.0/Myteka.Content.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/Debug/net6.0/Myteka.Content.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/Debug/net6.0/Myteka.Content.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/Debug/net6.0/Myteka.Content.csproj.CopyComplete" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/Debug/net6.0/Myteka.Content.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/Debug/net6.0/Myteka.Content.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/Debug/net6.0/Myteka.Content.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/Debug/net6.0/Myteka.Content.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/Debug/net6.0/Myteka.Content.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/Debug/net6.0/apphost.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/Debug/net6.0/ref/Myteka.Content.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/Debug/net6.0/refint/Myteka.Content.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/Debug/net6.0/staticwebassets.build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/Myteka.Content.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/Myteka.Content.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/Myteka.Content.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Content/obj/staticwebassets.pack.sentinel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/Myteka.ExternalApi.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/bin/Debug/net6.0/Microsoft.OpenApi.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/bin/Debug/net6.0/Myteka.ExternalApi.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/bin/Debug/net6.0/Myteka.ExternalApi.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/bin/Debug/net6.0/Myteka.ExternalApi.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/bin/Debug/net6.0/Myteka.ExternalApi.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/bin/Debug/net6.0/Myteka.ExternalApi.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/bin/Debug/net6.0/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/bin/Debug/net6.0/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/ExternalApi.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/ExternalApi.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/ExternalApi.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/ExternalApi.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/ExternalApi.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/ExternalApi.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/Myteka.External.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/Myteka.External.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/Myteka.External.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/Myteka.External.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/Myteka.External.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/Myteka.External.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/Myteka.ExternalApi.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/Myteka.ExternalApi.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/Myteka.ExternalApi.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/Myteka.ExternalApi.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/Myteka.ExternalApi.MvcApplicationPartsAssemblyInfo.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/Myteka.ExternalApi.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/Myteka.ExternalApi.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/Myteka.ExternalApi.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/Myteka.ExternalApi.csproj.CopyComplete" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/Myteka.ExternalApi.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/Myteka.ExternalApi.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/Myteka.ExternalApi.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/Myteka.ExternalApi.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/Myteka.ExternalApi.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/apphost.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/ref/Myteka.ExternalApi.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/refint/Myteka.ExternalApi.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Debug/net6.0/staticwebassets.build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/ExternalApi.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/ExternalApi.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/ExternalApi.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Myteka.External.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Myteka.External.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Myteka.External.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Myteka.ExternalApi.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Myteka.ExternalApi.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/Myteka.ExternalApi.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/staticwebassets.pack.sentinel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/src/Controllers/BaseController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/src/Controllers/ContentController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/src/Controllers/SearchController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.ExternalApi/src/Controllers/UsersController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/Myteka.FileRepository.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/Src/Allocator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/Src/FileMetaRecover.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/Src/FileSaver.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/Src/MetaSync.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/bin/Debug/net6.0/Myteka.FileRepository.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/bin/Debug/net6.0/Myteka.FileRepository.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/bin/Debug/net6.0/Myteka.FileRepository.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/bin/Debug/net6.0/Myteka.Models.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/bin/Debug/net6.0/Myteka.Models.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/obj/Debug/net6.0/Myteka.FileRepository.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/obj/Debug/net6.0/Myteka.FileRepository.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/obj/Debug/net6.0/Myteka.FileRepository.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/obj/Debug/net6.0/Myteka.FileRepository.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/obj/Debug/net6.0/Myteka.FileRepository.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/obj/Debug/net6.0/Myteka.FileRepository.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/obj/Debug/net6.0/Myteka.FileRepository.csproj.CopyComplete" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/obj/Debug/net6.0/Myteka.FileRepository.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/obj/Debug/net6.0/Myteka.FileRepository.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/obj/Debug/net6.0/Myteka.FileRepository.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/obj/Debug/net6.0/Myteka.FileRepository.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/obj/Debug/net6.0/ref/Myteka.FileRepository.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/obj/Debug/net6.0/refint/Myteka.FileRepository.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/obj/Myteka.FileRepository.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/obj/Myteka.FileRepository.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/obj/Myteka.FileRepository.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.FileRepository/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Controllers/AudioController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Controllers/AuthorController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Controllers/BaseController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Controllers/BookController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Controllers/ContentController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Controllers/UserController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Migrations/20220803201910_Init.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Migrations/20220803201910_Init.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Migrations/20220803204015_Init2.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Migrations/20220803204015_Init2.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Migrations/20220803220358_Init3.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Migrations/20220803220358_Init3.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Migrations/20220804225845_Init4.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Migrations/20220804225845_Init4.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Migrations/20220805132055_Init5.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Migrations/20220805132055_Init5.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Migrations/20220807114759_BookTest1.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Migrations/20220807114759_BookTest1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Migrations/20220807125320_BookTest2.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Migrations/20220807125320_BookTest2.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Migrations/DataContextModelSnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Myteka.Infrastructure.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Src/Data/DataContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Src/Data/Implementations/AudioRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Src/Data/Implementations/AuthorRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Src/Data/Implementations/BookRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Src/Data/Implementations/ContentRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Src/Data/Implementations/UserRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Src/Data/Interfaces/IAudioRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Src/Data/Interfaces/IAuthorRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Src/Data/Interfaces/IBookRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Src/Data/Interfaces/IContentRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Src/Data/Interfaces/IUserRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Src/Data/Mapping/MappingProfiler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Src/Exceptions/FileAlreadyExistsException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Src/Exceptions/GuidNotValidException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Src/Exceptions/NotFoundException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Src/Validators/AuthorValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Src/Validators/BookValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/AutoMapper.Collection.EntityFrameworkCore.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/AutoMapper.Collection.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/AutoMapper.Extensions.ExpressionMapping.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/AutoMapper.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/FluentValidation.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Humanizer.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Microsoft.Extensions.Caching.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Microsoft.Extensions.Logging.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Microsoft.Extensions.Options.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Microsoft.Extensions.Primitives.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Microsoft.OpenApi.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Mono.TextTemplating.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.FileRepository.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.FileRepository.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.Infrastructure.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.Infrastructure.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.Infrastructure.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.Infrastructure.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.Infrastructure.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.Infrastructure.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.Models.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.Models.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Npgsql.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/System.CodeDom.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.MvcApplicationPartsAssemblyInfo.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.csproj.CopyComplete" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/apphost.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/ref/Myteka.Infrastructure.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/refint/Myteka.Infrastructure.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/staticwebassets.build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Myteka.Infrastructure.csproj.EntityFrameworkCore.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Myteka.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Myteka.Infrastructure.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Myteka.Infrastructure.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/staticwebassets.pack.sentinel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/Myteka.Models.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/Src/ErrorResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/Src/ExternalModels/AudioExternal.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/Src/ExternalModels/AuthorExternal.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/Src/ExternalModels/BookExternal.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/Src/ExternalModels/ContentExternal.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/Src/ExternalModels/RegisterModels/BookRegisterModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/Src/ExternalModels/RegisterModels/ContentRegisterModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/Src/ExternalModels/UserExternal.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/Src/InternalModels/Audio.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/Src/InternalModels/Author.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/Src/InternalModels/Book.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/Src/InternalModels/Content.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/Src/InternalModels/ContentMetadata.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/Src/InternalModels/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/bin/Debug/net6.0/Myteka.Models.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/bin/Debug/net6.0/Myteka.Models.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/bin/Debug/net6.0/Myteka.Models.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/obj/Debug/net6.0/Myteka.Models.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/obj/Debug/net6.0/Myteka.Models.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/obj/Debug/net6.0/Myteka.Models.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/obj/Debug/net6.0/Myteka.Models.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/obj/Debug/net6.0/Myteka.Models.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/obj/Debug/net6.0/Myteka.Models.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/obj/Debug/net6.0/Myteka.Models.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/obj/Debug/net6.0/Myteka.Models.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/obj/Debug/net6.0/Myteka.Models.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/obj/Debug/net6.0/Myteka.Models.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/obj/Debug/net6.0/ref/Myteka.Models.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/obj/Debug/net6.0/refint/Myteka.Models.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/obj/Myteka.Models.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/obj/Myteka.Models.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/obj/Myteka.Models.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Models/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/Controllers/BaseController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/Controllers/BookSearchController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/Myteka.Search.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/Src/Implementations/BookSearch.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/Src/Implementations/Cash.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/Src/Interfaces/IBookSearch.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/Src/Interfaces/ICash.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/bin/Debug/net6.0/Microsoft.OpenApi.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/bin/Debug/net6.0/Myteka.Search.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/bin/Debug/net6.0/Myteka.Search.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/bin/Debug/net6.0/Myteka.Search.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/bin/Debug/net6.0/Myteka.Search.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/bin/Debug/net6.0/Myteka.Search.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/bin/Debug/net6.0/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/bin/Debug/net6.0/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.MvcApplicationPartsAssemblyInfo.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.csproj.CopyComplete" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/apphost.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/ref/Myteka.Search.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/refint/Myteka.Search.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/staticwebassets.build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/Myteka.Search.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/Myteka.Search.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/Myteka.Search.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Search/obj/staticwebassets.pack.sentinel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Share/Controllers/WeatherForecastController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Share/Myteka.Share.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Share/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Share/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Share/WeatherForecast.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Share/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Share/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Share/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Share/obj/Debug/net6.0/Myteka.Share.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Share/obj/Debug/net6.0/Myteka.Share.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Share/obj/Debug/net6.0/Myteka.Share.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Share/obj/Debug/net6.0/Myteka.Share.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Share/obj/Debug/net6.0/Myteka.Share.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Share/obj/Debug/net6.0/Myteka.Share.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Share/obj/Myteka.Share.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Share/obj/Myteka.Share.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Share/obj/Myteka.Share.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Share/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Share/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Share/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Share/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Tests/Myteka.Tests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Tests/UnitTest1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Tests/Usings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Tests/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Tests/obj/Debug/net6.0/Myteka.Tests.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Tests/obj/Debug/net6.0/Myteka.Tests.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Tests/obj/Debug/net6.0/Myteka.Tests.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Tests/obj/Debug/net6.0/Myteka.Tests.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Tests/obj/Debug/net6.0/Myteka.Tests.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Tests/obj/Debug/net6.0/Myteka.Tests.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Tests/obj/Myteka.Tests.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Tests/obj/Myteka.Tests.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Tests/obj/Myteka.Tests.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Tests/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Tests/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Tests/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Tests/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/Controllers/WeatherForecastController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/Myteka.Users.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/WeatherForecast.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/bin/Debug/net6.0/Microsoft.OpenApi.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/bin/Debug/net6.0/Myteka.Users.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/bin/Debug/net6.0/Myteka.Users.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/bin/Debug/net6.0/Myteka.Users.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/bin/Debug/net6.0/Myteka.Users.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/bin/Debug/net6.0/Myteka.Users.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/bin/Debug/net6.0/Users.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/bin/Debug/net6.0/Users.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/bin/Debug/net6.0/Users.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/bin/Debug/net6.0/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/bin/Debug/net6.0/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Myteka.Users.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Myteka.Users.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Myteka.Users.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Myteka.Users.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Myteka.Users.MvcApplicationPartsAssemblyInfo.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Myteka.Users.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Myteka.Users.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Myteka.Users.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Myteka.Users.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Myteka.Users.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Myteka.Users.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Myteka.Users.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Myteka.Users.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Users.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Users.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Users.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Users.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Users.MvcApplicationPartsAssemblyInfo.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Users.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Users.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Users.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Users.csproj.CopyComplete" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Users.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Users.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Users.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Users.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/Users.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/apphost.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/ref/Myteka.Users.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/ref/Users.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/refint/Myteka.Users.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/refint/Users.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Debug/net6.0/staticwebassets.build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Myteka.Users.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Myteka.Users.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Myteka.Users.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Users.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Users.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/Users.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.Users/obj/staticwebassets.pack.sentinel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Myteka.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Myteka/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Myteka/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Content/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Content/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Content/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Content/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.ExternalApi/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.ExternalApi/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.ExternalApi/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.FileRepository/bin/Debug/net6.0/Myteka.FileRepository.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.FileRepository/bin/Debug/net6.0/Myteka.FileRepository.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.FileRepository/bin/Debug/net6.0/Myteka.FileRepository.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.FileRepository/bin/Debug/net6.0/Myteka.FileRepository.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.FileRepository/bin/Debug/net6.0/Myteka.FileRepository.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.FileRepository/bin/Debug/net6.0/Myteka.FileRepository.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.FileRepository/bin/Debug/net6.0/Myteka.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.FileRepository/bin/Debug/net6.0/Myteka.Models.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.FileRepository/bin/Debug/net6.0/Myteka.Models.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.FileRepository/bin/Debug/net6.0/Myteka.Models.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.FileRepository/obj/Debug/net6.0/Myteka.FileRepository.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.FileRepository/obj/Debug/net6.0/Myteka.FileRepository.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.FileRepository/obj/Debug/net6.0/Myteka.FileRepository.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.FileRepository/obj/Debug/net6.0/Myteka.FileRepository.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.FileRepository/obj/Debug/net6.0/Myteka.FileRepository.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.FileRepository/obj/Debug/net6.0/ref/Myteka.FileRepository.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.FileRepository/obj/Debug/net6.0/refint/Myteka.FileRepository.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.FileRepository/obj/Myteka.FileRepository.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.FileRepository/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.FileRepository/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.FileRepository/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.FileRepository/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Infrastructure/Controllers/ContentController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Infrastructure/Controllers/ContentController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.FileRepository.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.FileRepository.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.FileRepository.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.FileRepository.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.Infrastructure.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.Infrastructure.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.Infrastructure.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.Infrastructure.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.Models.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.Models.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Infrastructure/bin/Debug/net6.0/Myteka.Models.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/Myteka.Infrastructure.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/ref/Myteka.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/ref/Myteka.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/refint/Myteka.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Debug/net6.0/refint/Myteka.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Myteka.Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/Myteka.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Infrastructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Infrastructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Infrastructure/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Infrastructure/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Models/bin/Debug/net6.0/Myteka.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Models/bin/Debug/net6.0/Myteka.Models.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Models/bin/Debug/net6.0/Myteka.Models.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Models/bin/Debug/net6.0/Myteka.Models.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Models/obj/Debug/net6.0/Myteka.Models.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Models/obj/Debug/net6.0/Myteka.Models.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Models/obj/Debug/net6.0/Myteka.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Models/obj/Debug/net6.0/Myteka.Models.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Models/obj/Debug/net6.0/Myteka.Models.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Models/obj/Debug/net6.0/Myteka.Models.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Models/obj/Debug/net6.0/ref/Myteka.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Models/obj/Debug/net6.0/ref/Myteka.Models.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Models/obj/Debug/net6.0/refint/Myteka.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Models/obj/Debug/net6.0/refint/Myteka.Models.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Models/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Models/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Search/Src/Implementations/BookSearch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Search/Src/Implementations/BookSearch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Search/bin/Debug/net6.0/Myteka.Search.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Search/bin/Debug/net6.0/Myteka.Search.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Search/bin/Debug/net6.0/Myteka.Search.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Search/bin/Debug/net6.0/Myteka.Search.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Search/bin/Debug/net6.0/Myteka.Search.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Search/bin/Debug/net6.0/Myteka.Search.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/Myteka.Search.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/ref/Myteka.Search.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/ref/Myteka.Search.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/refint/Myteka.Search.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Search/obj/Debug/net6.0/refint/Myteka.Search.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Search/obj/Myteka.Search.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Search/obj/Myteka.Search.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Search/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Search/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Search/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Search/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Search/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Search/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Search/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Search/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Search/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Search/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Tests/Myteka.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Tests/Myteka.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Tests/UnitTest1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Tests/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Users/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Users/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.Users/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.Users/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myteka.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Myteka.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4bfa39d3664845979ea4b498bbba541017e790/b6/9a0a136a/SingleQueryingEnumerable`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a1acf0f48ddc4c7f9fb43437593fae3a69800/b0/14b3c342/ValidationException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ae1f29ab81b34e909584423a3fc6fff7a23898/85/eeeca932/Task.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/caf964f152ef44ca948cee8b706586cd3da98/aa/89eeff94/Uri.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dd3352028d6148edbf1aa2a87294ece1b4290/be/2c7b8b9f/TemplateParser.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/362b3367fee82c815c79f6cd7b4631f61a2fc88c555016a2f87944d0454aac/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/57d95aa7e3a88eb2892ab73bf24bea15cf5db06755473e43f2ade49d811542dc/Profile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/69a6423685776cfa8c4b54bf4d63ec1880352fc5426dbfe8dac256f86449bbda/Mapper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/728969f6c1787f13a1d3683c19de5fa75eabcbe1f93bfbf4ea13db37b36a54c5/CallSiteFactory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/80fad1abc6a0b19dbe738ff7fdc6d92da5bf128839240743dd9c1d3e274cf/SwaggerMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8fcffa231081431bf9b596c56b8a88662ddd8e4ceda558bf58267d2b64139b/ReflectionHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/99f4bb2e365f4f5b76caa7fa9da4bcbd7c1362e4144babe19855c86a4b545/AbstractValidator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ae1f29ab81b34e909584423a3fc6fff7a23898/_13f9f/IList.cs" root0="SKIP_HIGHLIGHTING" />
@@ -518,7 +127,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c6ad457575d35dcbff26c9a5e3fb1d92f1d3c55f25ef6ebf475367b5d8/List.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f3b9684f72bc2cc435eb694f7cc86eca8c240d2d1cefa1e8697a61f1f2f27f/SafeFileHandle.Windows.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f4708639776589f5ac2739f6fcbfc67343b1f9dac51cc1dbfdb003eef77cc1c/Monitor.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Myteka.Communication/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Myteka.Configuration/Src/Config.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Myteka.Configuration/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Myteka.ExternalApi/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Myteka.Infrastructure/Controllers/AudioController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Myteka.Infrastructure/Controllers/AuthorController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -534,27 +144,35 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Cohszexh3D6DiJgjgbSHRhBKsL" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Project.color&quot;: &quot;1a3420&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Project.color": "1a3420",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
-}</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.Myteka.Search">
+}]]></component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.Myteka.Infrastructure">
     <configuration name="Myteka.Content" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Myteka.Content/Myteka.Content.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
@@ -622,6 +240,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
+      <browser name="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
@@ -735,6 +354,20 @@
         <option name="Build" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue=".NET Launch Settings Profile.Myteka.Content" />
+      <item itemvalue=".NET Launch Settings Profile.Myteka.Content: IIS Express" />
+      <item itemvalue=".NET Launch Settings Profile.Myteka.External" />
+      <item itemvalue=".NET Launch Settings Profile.Myteka.External: IIS Express" />
+      <item itemvalue=".NET Launch Settings Profile.Myteka.Infrastructure" />
+      <item itemvalue=".NET Launch Settings Profile.Myteka.Infrastructure: IIS Express" />
+      <item itemvalue=".NET Launch Settings Profile.Myteka.Search" />
+      <item itemvalue=".NET Launch Settings Profile.Myteka.Search: IIS Express" />
+      <item itemvalue=".NET Launch Settings Profile.Myteka.Share" />
+      <item itemvalue=".NET Launch Settings Profile.Myteka.Share: IIS Express" />
+      <item itemvalue=".NET Launch Settings Profile.Users" />
+      <item itemvalue=".NET Launch Settings Profile.Users: IIS Express" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -754,8 +387,68 @@
       <workItem from="1659808480558" duration="133000" />
       <workItem from="1659808649406" duration="6147000" />
       <workItem from="1659870395971" duration="13016000" />
-      <workItem from="1659946350476" duration="10730000" />
+      <workItem from="1659946350476" duration="12071000" />
+      <workItem from="1661874452287" duration="767000" />
+      <workItem from="1661876166525" duration="988000" />
+      <workItem from="1661936521538" duration="10115000" />
+      <workItem from="1661962957843" duration="577000" />
+      <workItem from="1661963563153" duration="3246000" />
+      <workItem from="1662041065731" duration="2488000" />
+      <workItem from="1662138353427" duration="3749000" />
+      <workItem from="1662199723082" duration="6181000" />
+      <workItem from="1662379090398" duration="11706000" />
+      <workItem from="1662573241397" duration="631000" />
     </task>
+    <task id="LOCAL-00001" summary="First commit">
+      <created>1659963438982</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1659963438982</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Добавил .gitignore">
+      <created>1662209534149</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662209534149</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Добавил README файл">
+      <created>1662209574171</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662209574171</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Удаление файлов проекта Communication">
+      <created>1662209683756</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662209683756</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Поиск по названию книги&#10;И Swagger к поиску">
+      <created>1662210278302</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662210278302</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Изменил модель входного параметра для создания автора&#10; -&gt; Добавил модель регистрации автора в проекте Myteka.Models&#10; -&gt; Изменил тип в контроллере на AuthorRegisterModel в проекте Myteka.Infrastructure&#10; -&gt; Добавил правило к мапперу в проекте Myteka.Infrastructure">
+      <created>1662392535843</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662392535843</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Манипуляции с контентом и новые конфиги&#10;&#10;Добавил возможность удаления, изменения и получения всего контента&#10;&#10;Добавил новый сектор и поле конфигов, глобальные, пока что там только путь сохранения файлов&#10;&#10;Конфиги теперь работают через Singletone что-бы при каждом запросе конфига (коих может быть много и часто) не проделывать ненужные действия&#10;&#10;Переименовал GuidNotValidException в более верный GuidNotFoundException&#10;&#10;Добавил автовключение метаданных при запросе контента">
+      <created>1662403383212</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1662403383212</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -766,6 +459,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="26a1be5d-2102-4e3b-a686-476b75aac940">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:D:/Code/Myteka/Myteka.Configuration" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -773,9 +491,22 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="26a1be5d-2102-4e3b-a686-476b75aac940" value="TOOL_WINDOW" />
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="First commit" />
+    <MESSAGE value="Добавил .gitignore" />
+    <MESSAGE value="Добавил README файл" />
+    <MESSAGE value="Удаление файлов проекта Communication" />
+    <MESSAGE value="Поиск по названию книги&#10;И Swagger к поиску" />
+    <MESSAGE value="Изменил модель входного параметра для создания автора&#10; -&gt; Добавил модель регистрации автора в проекте Myteka.Models&#10; -&gt; Изменил тип в контроллере на AuthorRegisterModel в проекте Myteka.Infrastructure&#10; -&gt; Добавил правило к мапперу в проекте Myteka.Infrastructure" />
+    <MESSAGE value="Манипуляции с контентом и новые конфиги&#10;&#10;Добавил возможность удаления, изменения и получения всего контента&#10;&#10;Добавил новый сектор и поле конфигов, глобальные, пока что там только путь сохранения файлов&#10;&#10;Конфиги теперь работают через Singletone что-бы при каждом запросе конфига (коих может быть много и часто) не проделывать ненужные действия&#10;&#10;Переименовал GuidNotValidException в более верный GuidNotFoundException&#10;&#10;Добавил автовключение метаданных при запросе контента" />
+    <option name="LAST_COMMIT_MESSAGE" value="Манипуляции с контентом и новые конфиги&#10;&#10;Добавил возможность удаления, изменения и получения всего контента&#10;&#10;Добавил новый сектор и поле конфигов, глобальные, пока что там только путь сохранения файлов&#10;&#10;Конфиги теперь работают через Singletone что-бы при каждом запросе конфига (коих может быть много и часто) не проделывать ненужные действия&#10;&#10;Переименовал GuidNotValidException в более верный GuidNotFoundException&#10;&#10;Добавил автовключение метаданных при запросе контента" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
