@@ -2,6 +2,16 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Myteka.Configuration/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Myteka.Configuration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Myteka.Configuration.dll": {}
+        }
+      },
       "Myteka.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -15,6 +25,11 @@
     }
   },
   "libraries": {
+    "Myteka.Configuration/1.0.0": {
+      "type": "project",
+      "path": "../Myteka.Configuration/Myteka.Configuration.csproj",
+      "msbuildProject": "../Myteka.Configuration/Myteka.Configuration.csproj"
+    },
     "Myteka.Models/1.0.0": {
       "type": "project",
       "path": "../Myteka.Models/Myteka.Models.csproj",
@@ -23,6 +38,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Myteka.Configuration >= 1.0.0",
       "Myteka.Models >= 1.0.0"
     ]
   },
@@ -53,6 +69,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "D:\\Code\\Myteka\\Myteka.Configuration\\Myteka.Configuration.csproj": {
+              "projectPath": "D:\\Code\\Myteka\\Myteka.Configuration\\Myteka.Configuration.csproj"
+            },
             "D:\\Code\\Myteka\\Myteka.Models\\Myteka.Models.csproj": {
               "projectPath": "D:\\Code\\Myteka\\Myteka.Models\\Myteka.Models.csproj"
             }

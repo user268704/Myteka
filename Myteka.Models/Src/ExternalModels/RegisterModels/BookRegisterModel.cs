@@ -1,4 +1,4 @@
-namespace Myteka.Models.ExternalModels;
+namespace Myteka.Models.ExternalModels.RegisterModels;
 
 public class BookRegisterModel
 {

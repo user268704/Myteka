@@ -1,24 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
-        <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-        <GenerateDocumentationFile>true</GenerateDocumentationFile>
-        <NoWarn>$(NoWarn);1591</NoWarn>
+        <Nullable>enable</Nullable>
     </PropertyGroup>
-
-    <ItemGroup>
-        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
-    </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\Myteka.Configuration\Myteka.Configuration.csproj" />
       <ProjectReference Include="..\Myteka.Models\Myteka.Models.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Compile Remove="Src\Interfaces\ICash.cs" />
     </ItemGroup>
 
 </Project>

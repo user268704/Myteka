@@ -13,3 +13,5 @@ D:\Code\Myteka\Myteka.FileRepository\obj\Debug\net6.0\Myteka.FileRepository.dll
 D:\Code\Myteka\Myteka.FileRepository\obj\Debug\net6.0\refint\Myteka.FileRepository.dll
 D:\Code\Myteka\Myteka.FileRepository\obj\Debug\net6.0\Myteka.FileRepository.pdb
 D:\Code\Myteka\Myteka.FileRepository\obj\Debug\net6.0\ref\Myteka.FileRepository.dll
+D:\Code\Myteka\Myteka.FileRepository\bin\Debug\net6.0\Myteka.Configuration.dll
+D:\Code\Myteka\Myteka.FileRepository\bin\Debug\net6.0\Myteka.Configuration.pdb

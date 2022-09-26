@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="src" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Myteka.Exceptions\Myteka.Exceptions.csproj" />
+      <ProjectReference Include="..\Myteka.Infrastructure\Myteka.Infrastructure.csproj" />
+      <ProjectReference Include="..\Myteka.Search\Myteka.Search.csproj" />
+    </ItemGroup>
+
+</Project>
