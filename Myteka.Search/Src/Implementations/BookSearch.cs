@@ -1,4 +1,5 @@
 using System.Text.Json;
+using Myteka.Configuration;
 using Myteka.Configuration.Models;
 using Myteka.Models.ExternalModels;
 using Myteka.Search.Interfaces;
@@ -10,18 +11,19 @@ public class BookSearch : IBookSearch
 {
     HttpClient httpClient = new();
     IConfiguration configuration;
-    private ConfigModel Config { get; }
+    private ConfigModel ConfigModel { get; }
 
     public BookSearch()
     {
-        configuration = new Configuration.Configuration();
         
-        Config = configuration.GetConfig();
+        configuration = Config.GetConfig();
+        
+        ConfigModel = configuration.Get();
     }
     
     public IEnumerable<BookExternal> SearchByTitle(string title)
     {
-        string url = Config.Urls.Infrastructure.Split(';')[0] + "/api/" + Config.EndPoints.Infrastructure.Book.GetAllBooks;
+        string url = ConfigModel.Urls.Infrastructure.Split(';')[0] + "/api/" + ConfigModel.EndPoints.Infrastructure.Book.GetAllBooks;
 
         var response = httpClient
             .GetStringAsync(url)
