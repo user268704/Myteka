@@ -3,7 +3,7 @@ using Myteka.Models.ExternalModels;
 using Myteka.Models.ExternalModels.RegisterModels;
 using Myteka.Models.InternalModels;
 
-namespace Myteka.Infrastructure.Data.Mapping;
+namespace Myteka.Web.Mapping;
 
 public class MappingProfiler : Profile
 {

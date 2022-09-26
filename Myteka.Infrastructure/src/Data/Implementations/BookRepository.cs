@@ -1,6 +1,4 @@
-using AutoMapper;
 using Myteka.Infrastructure.Data.Interfaces;
-using Myteka.Models.ExternalModels;
 using Myteka.Models.ExternalModels.RegisterModels;
 using Myteka.Models.InternalModels;
 

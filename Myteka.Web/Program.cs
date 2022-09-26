@@ -1,3 +1,4 @@
+using System.Reflection;
 using Myteka.Infrastructure.Data.Implementations;
 using Myteka.Infrastructure.Data.Interfaces;
 
@@ -15,6 +16,7 @@ builder.Services.AddScoped<IAudioRepository, AudioRepository>();
 builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddScoped<IContentRepository, ContentRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddAutoMapper(typeof(Program));
 
 var app = builder.Build();
 
