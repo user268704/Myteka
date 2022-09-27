@@ -1,8 +1,9 @@
+using System.Net;
 using Myteka.Models.InternalModels;
 
 namespace Myteka.FileRepository;
 
-public class FileSaver
+public class FileManager
 {
     /// <summary>
     /// Main method to save the file
@@ -11,8 +12,8 @@ public class FileSaver
     /// <param name="file"></param>
     public void Save(Content contentData, byte[] file)
     {
-        string filePath = Allocator.GetFilePath(contentData.Id);
-        string fileFullPath = filePath + @"\" + contentData.FileName;
+        string filePath = Allocator.CreateFilePath(contentData.Id);
+        string fileFullPath = filePath + "/" + contentData.FileName;
         Allocator.CreateFolder(filePath);
 
         contentData.Path = fileFullPath;
@@ -20,5 +21,17 @@ public class FileSaver
         byte[] fileWithMetadata = metaSync.Sync(contentData.Metadata, file);
         
         File.WriteAllBytes(fileFullPath, fileWithMetadata);
+    }
+
+    public void Remove(Content contentData)
+    {
+        string directoryPath = Allocator.CreateFilePath(contentData.Id);
+        string fileFullPath = directoryPath + "/" + contentData.FileName;
+
+        if (File.Exists(fileFullPath))
+        {
+            File.Delete(fileFullPath);
+            Directory.Delete(directoryPath);
+        }
     }
 }

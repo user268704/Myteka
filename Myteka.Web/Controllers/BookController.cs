@@ -45,7 +45,7 @@ public class BookController : BaseController
                 ErrorCode = StatusCodes.Status400BadRequest
             });
 
-        ICollection<Book> books = _bookRepository.GetAll(b => b.Theme == theme);
+        ICollection<Book> books = _bookRepository.GetAll(b => b.Theme.Contains(theme, StringComparison.CurrentCultureIgnoreCase));
         
         IEnumerable<BookExternal> mappedResult = _mapper.Map<IEnumerable<BookExternal>>(books);
         return Ok(mappedResult);
@@ -65,7 +65,7 @@ public class BookController : BaseController
     public IActionResult GetBookById(Guid id)
     {
         var book = _bookRepository.GetById(id);
-        if (book == null)
+        if (book.Id.Equals(Guid.Empty))
             return NotFound(new ErrorResponse
             {
                 Error = "There is no such book",

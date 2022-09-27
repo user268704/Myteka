@@ -4,7 +4,7 @@ namespace Myteka.FileRepository;
 
 public class Allocator
 {
-    public static string GetFilePath(Guid fileId)
+    public static string CreateFilePath(Guid fileId)
     {
         string idString = fileId.ToString();
         

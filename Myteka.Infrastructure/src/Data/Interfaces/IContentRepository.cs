@@ -14,6 +14,8 @@ public interface IContentRepository
     ContentMetadata GetMetadata(Guid contentId);
     void UpdateMetadata(Guid contentId, ContentMetadata newMetadata);
     bool CheckById(Guid contentId);
+    Content Get(Guid contentId);
     IEnumerable<Content> GetAll();
+    IEnumerable<Content> GetAll(Func<Content, bool> predicate);
     IEnumerable<Content> GetAll(int count);
 }

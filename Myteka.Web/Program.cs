@@ -1,6 +1,8 @@
 using System.Reflection;
 using Myteka.Infrastructure.Data.Implementations;
 using Myteka.Infrastructure.Data.Interfaces;
+using Myteka.Search.Implementations;
+using Myteka.Search.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +22,8 @@ builder.Services.AddScoped<IAudioRepository, AudioRepository>();
 builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddScoped<IContentRepository, ContentRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IBookSearch, BookSearch>();
+
 builder.Services.AddAutoMapper(typeof(Program));
 
 var app = builder.Build();
@@ -30,6 +34,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// Добавляет поддержку работы с datetime в базе данных.
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
 app.UseHttpsRedirection();
 
