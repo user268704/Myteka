@@ -9,7 +9,7 @@ public interface IAuthorRepository
     ICollection<Book> GetBooks(Guid authorId);
     ICollection<string> GetAuthorTags(Guid authorId);
     Author GetAuthor(Guid id);
-    bool Contains(Guid id);
+    bool CheckById(Guid id);
     void Add(Author author);
     void AddBook(Guid authorId, Guid bookId);
     void Remove(Guid id);

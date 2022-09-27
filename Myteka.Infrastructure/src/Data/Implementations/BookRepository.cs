@@ -6,7 +6,7 @@ namespace Myteka.Infrastructure.Data.Implementations;
 
 public class BookRepository : IBookRepository
 {
-    private DataContext _dataContext;
+    private readonly DataContext _dataContext;
     public BookRepository()
     {
         DataContext db = new DataContext();
@@ -15,30 +15,29 @@ public class BookRepository : IBookRepository
     
     public ICollection<Book> GetAll(int count)
     {
-        return _dataContext.Books.Take(count).ToList();
+        if (count > 0)
+            return _dataContext.Books.Take(count).ToList();
+
+        throw new ArgumentException("Count must be greater than 0", nameof(count));
     }
 
-    public ICollection<Book> GetAll()
-    {
-        return _dataContext.Books.ToList();
-    }
+    public ICollection<Book> GetAll() => 
+        _dataContext.Books.ToList();
 
-    public Book? GetById(Guid id)
-    {
-        Book? book = _dataContext.Books.Find(id);
-        return book;
-    }
+    public ICollection<Book> GetAll(Func<Book, bool> predicate) => 
+        _dataContext.Books.Where(predicate).ToList();
+
+    public Book GetById(Guid id) => 
+        _dataContext.Books.Find(id) ?? new();
 
     public bool CheckById(Guid id)
     {
-        bool contains = _dataContext.Books.Any(b => b.Id == id);
-        return contains;
+        return _dataContext.Books.Any(b => b.Id == id);
     }
 
     public void Add(Book book)
     {
-        book.Id = Guid.NewGuid();
-        
+        // book.Id = Guid.NewGuid();
         _dataContext.Books.Add(book);
     }
 
@@ -49,17 +48,18 @@ public class BookRepository : IBookRepository
 
     public void Remove(Guid id)
     {
-        if (CheckById(id))
+        Book? book = _dataContext.Books.Find(id);
+        
+        if (book != null)
         {
-            _dataContext.Books.Remove(_dataContext.Books.Find(id));
+            _dataContext.Books.Remove(book);
+            return;
         }
-        else
-        {
-            throw new Exception("Book not found");
-        }
+        
+        throw new ArgumentException("Book with this id not found", nameof(id));
     }
 
-    public bool CheckForExists(BookRegisterModel checkingBook)
+    public bool DeepCheckExists(BookRegisterModel checkingBook)
     {
         bool isTitleExists = _dataContext.Books.Any(book => book.Title == checkingBook.Title);
         bool isDescriptionExists = _dataContext.Books.Any(book => book.Title == checkingBook.Description);

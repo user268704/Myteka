@@ -1,9 +1,10 @@
 using FluentValidation;
+using Myteka.Models.ExternalModels.RegisterModels;
 using Myteka.Models.InternalModels;
 
 namespace Myteka.Web.Validators;
 
-public class BookValidator : AbstractValidator<Book>
+public class BookValidator : AbstractValidator<BookRegisterModel>
 {
     public BookValidator()
     {

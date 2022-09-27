@@ -39,13 +39,13 @@ public class AuthorRepository : IAuthorRepository
 
     public Author? GetAuthor(Guid id)
     {
-        if (Contains(id))
+        if (CheckById(id))
             return _data.Authors.Find(id);
 
         return null;
     }
     
-    public bool Contains(Guid id)
+    public bool CheckById(Guid id)
     {
         return _data.Authors.Any(author => author.Id == id);
     }

@@ -8,11 +8,12 @@ public interface IBookRepository
 {
     ICollection<Book> GetAll(int count);
     ICollection<Book> GetAll();
+    ICollection<Book> GetAll(Func<Book, bool> predicate);
     Book GetById(Guid id);
     bool CheckById(Guid id);
     void Add(Book book);
     void Update(Book book);
     void Remove(Guid id);
-    bool CheckForExists(BookRegisterModel checkingBook);
+    bool DeepCheckExists(BookRegisterModel checkingBook);
     void SaveChanges();
 }

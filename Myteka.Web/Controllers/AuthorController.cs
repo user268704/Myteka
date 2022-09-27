@@ -196,7 +196,7 @@ public class AuthorController : BaseController
     [ProducesResponseType(StatusCodes.Status403Forbidden)]
     public IActionResult Remove(Guid authorId)
     {
-        bool isAuthorExists = _authorRepository.Contains(authorId);
+        bool isAuthorExists = _authorRepository.CheckById(authorId);
         
         if (isAuthorExists)
         {
