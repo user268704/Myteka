@@ -14,6 +14,8 @@ public class Book
     
     [ForeignKey("ContentId")]
     public Guid ContentId { get; set; }
+    public DateTime WritingDate { get; set; }
+    public DateTime UploadDate { get; set; }
     public string[] Tags { get; set; }
-    public string Theme { get; set; }
+    public string Genre { get; set; }
 }

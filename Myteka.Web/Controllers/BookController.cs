@@ -28,7 +28,7 @@ public class BookController : BaseController
     /// <summary>
     /// Returns books by topic
     /// </summary>
-    /// <param name="theme">Theme</param>
+    /// <param name="genre">Genre</param>
     /// <returns>A list of books suitable for the request</returns>
     /// <response code="200">Returns a list of books</response>
     /// <response code="403">If the request is invalid</response>
@@ -36,16 +36,16 @@ public class BookController : BaseController
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public IActionResult GetBookByTheme(string theme)
+    public IActionResult GetBookByGenre(string genre)
     {
-        if (string.IsNullOrWhiteSpace(theme))
+        if (string.IsNullOrWhiteSpace(genre))
             return NotFound(new ErrorResponse
             {
                 Error = "Theme is empty",
                 ErrorCode = StatusCodes.Status400BadRequest
             });
 
-        ICollection<Book> books = _bookRepository.GetAll(b => b.Theme.Contains(theme, StringComparison.CurrentCultureIgnoreCase));
+        ICollection<Book> books = _bookRepository.GetAll(b => b.Genre.Contains(genre, StringComparison.CurrentCultureIgnoreCase));
         
         IEnumerable<BookExternal> mappedResult = _mapper.Map<IEnumerable<BookExternal>>(books);
         return Ok(mappedResult);
@@ -95,7 +95,6 @@ public class BookController : BaseController
     /// Creates a book and writes it to the database
     /// </summary>
     /// <param name="book">The book being created</param>
-    /// TODO: contentID
     /// <returns></returns>
     /// <response code="200">The book has been added successfully</response>
     /// <response code="400">If the request is invalid</response>

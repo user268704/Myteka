@@ -37,7 +37,8 @@ public class BookRepository : IBookRepository
 
     public void Add(Book book)
     {
-        // book.Id = Guid.NewGuid();
+        book.UploadDate = DateTime.Now;
+
         _dataContext.Books.Add(book);
     }
 
