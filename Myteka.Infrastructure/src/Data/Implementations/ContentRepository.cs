@@ -60,7 +60,7 @@ public class ContentRepository : IContentRepository
         
         FileManager fileManager = new FileManager();
         FileMetaRecover fileMetaRecover = new FileMetaRecover();
-
+        
         if (CheckByName(fileName))
             throw new FileAlreadyExistsException(fileName);
 
@@ -81,9 +81,7 @@ public class ContentRepository : IContentRepository
 
         if (fileModified != null && book != null)
         {
-            fileModified.BookId = bookId;
             book.ContentId = fileModified.Id;
-        
             _dataContext.SaveChanges();
             
             return;

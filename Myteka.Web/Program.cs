@@ -1,4 +1,5 @@
 using System.Reflection;
+using Myteka.Infrastructure.Data;
 using Myteka.Infrastructure.Data.Implementations;
 using Myteka.Infrastructure.Data.Interfaces;
 using Myteka.Search.Implementations;
@@ -17,12 +18,23 @@ builder.Services.AddSwaggerGen(options =>
     options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
 });
 
+#region Repositories
+
+builder.Services.AddScoped<DataContext>();
 builder.Services.AddScoped<IAuthorRepository, AuthorRepository>();
-builder.Services.AddScoped<IAudioRepository, AudioRepository>();
 builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddScoped<IContentRepository, ContentRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+#endregion
+
+#region Search services
+
+builder.Services.AddScoped<IAuthorSearch, AuthorSearch>();
 builder.Services.AddScoped<IBookSearch, BookSearch>();
+builder.Services.AddScoped<IContentSearch, ContentSearch>();
+
+#endregion
 
 builder.Services.AddAutoMapper(typeof(Program));
 

@@ -22,7 +22,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Src\Infrastructure" />
+      <ProjectReference Include="..\Myteka.Search\Myteka.Search.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using Myteka.Configuration;
 using Myteka.Exceptions;
+using Myteka.FileRepository;
 using Myteka.Infrastructure.Data.Interfaces;
 using Myteka.Models;
 using Myteka.Models.InternalModels;
@@ -57,13 +59,27 @@ public class ContentController : BaseController
     [ProducesResponseType(StatusCodes.Status200OK)]
     public IActionResult UploadBook(IFormFile file)
     {
-        if (file == null || file.Length == 0)
+
+        #region Validation
+
+        if (file.Length == 0)
             return BadRequest(new ErrorResponse
             {
                 Error = "File is empty",
                 ErrorCode = StatusCodes.Status400BadRequest
             });
         
+        FileManager fileManager = new();
+        if (fileManager.IsExtensionAllowed(file.FileName))
+            return BadRequest(new ErrorResponse
+            {
+                Error = "The file type is not supported",
+                Message = "Supported file types: " + string.Join(", ", fileManager.GetSupportedFileExtension()),
+                ErrorCode = StatusCodes.Status400BadRequest
+            });
+
+        #endregion
+
         Stream fileStream = file.OpenReadStream();
         byte[] fileBytes = new byte[file.Length];
         
@@ -71,6 +87,7 @@ public class ContentController : BaseController
         try
         {
             Guid fileId = _contentRepository.UploadFile(fileBytes, file.FileName);
+
             return Ok(new { FileId = fileId });
         }
         catch (FileAlreadyExistsException)

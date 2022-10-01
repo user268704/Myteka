@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Myteka.Models.InternalModels;
 
 public class Content
@@ -6,6 +8,7 @@ public class Content
     public string? Url { get; set; }
     public string? Path { get; set; }
     public string FileName { get; set; }
-    public Guid BookId { get; set; }
+
+    [ForeignKey("MetadataId")]
     public ContentMetadata Metadata { get; set; }
 }

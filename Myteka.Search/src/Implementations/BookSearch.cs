@@ -1,52 +1,56 @@
-using System.Text.Json;
-using Myteka.Configuration;
-using Myteka.Configuration.Models;
-using Myteka.Models.ExternalModels;
+using Myteka.Infrastructure.Data;
+using Myteka.Models.InternalModels;
 using Myteka.Search.Interfaces;
-using IConfiguration = Myteka.Configuration.IConfiguration;
 
 namespace Myteka.Search.Implementations;
 
 public class BookSearch : IBookSearch
 {
-    HttpClient httpClient = new();
-    IConfiguration configuration;
-    private ConfigModel ConfigModel { get; }
+    private readonly DataContext _dataRepository;
 
-    public BookSearch()
+    public BookSearch(DataContext dataContext)
     {
-        
-        configuration = Config.GetConfig();
-        
-        ConfigModel = configuration.Get();
+        _dataRepository = dataContext;
     }
     
-    public IEnumerable<BookExternal> SearchByTitle(string title)
+    public IEnumerable<Book> SearchByTitle(string title)
     {
-        string url = ConfigModel.Urls.Infrastructure.Split(';')[0] + "/api/" + ConfigModel.EndPoints.Infrastructure.Book.GetAllBooks;
+        var results = _dataRepository.Books.Where(opt => opt.Title.Contains(title, StringComparison.OrdinalIgnoreCase));
 
-        var response = httpClient
-            .GetStringAsync(url)
-            .Result;
-
-
-        List<BookExternal> allBooks = JsonSerializer.Deserialize<List<BookExternal>>(response, new JsonSerializerOptions
-        {
-            PropertyNamingPolicy = JsonNamingPolicy.CamelCase
-        });
-        
-        var results  = allBooks.Where(book => book.Title.ToLower().Contains(title.ToLower()));
         if (results.Any())
-        {
             return results;
-        }
-        
-        return new List<BookExternal>();
+
+        return new List<Book>();
     }
 
-    public IEnumerable<BookExternal> SearchByDescription(string searchString)
+    public IEnumerable<Book> SearchByDescription(string searchString)
     {
-        return new List<BookExternal>();
         // TODO: Сделать поиск
+        return new List<Book>();
+    }
+
+    public IEnumerable<Book> SearchByTags(string[] tags)
+    {
+        var results =
+            _dataRepository.Books.Where(opt =>
+                tags.Any(tag => opt.Tags.Contains(tag, StringComparer.OrdinalIgnoreCase)));
+        
+        if (results.Any())
+            return results;
+        
+        return new List<Book>();
+    }
+    
+    private List<string> GetAllWords()
+    {
+        List<string> bookTitles = _dataRepository.Books.Select(book => book.Title).ToList();
+        List<string> allWords = bookTitles.SelectMany(bookTitle => bookTitle.Split(' ')).ToList();
+
+        return allWords;
+    }
+
+    private string[] NgramSplit(string word, int n)
+    {
+        return new string[2];
     }
 }

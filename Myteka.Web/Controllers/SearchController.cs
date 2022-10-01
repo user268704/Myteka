@@ -6,10 +6,16 @@ namespace Myteka.Web.Controllers;
 public class SearchController : BaseController
 {
     private readonly IBookSearch _bookSearch;
+    private readonly IAuthorSearch _authorSearch;
+    private readonly IContentSearch _contentSearch;
 
-    public SearchController(IBookSearch bookSearch)
+    public SearchController(IBookSearch bookSearch, 
+        IAuthorSearch authorSearch,
+        IContentSearch contentSearch)
     {
         _bookSearch = bookSearch;
+        _authorSearch = authorSearch;
+        _contentSearch = contentSearch;
     }
 
     #region Books

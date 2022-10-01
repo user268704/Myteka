@@ -24,8 +24,8 @@ public class BookRepository : IBookRepository
     public ICollection<Book> GetAll() => 
         _dataContext.Books.ToList();
 
-    public ICollection<Book> GetAll(Func<Book, bool> predicate) => 
-        _dataContext.Books.Where(predicate).ToList();
+    public ICollection<Book> GetAll(Func<Book, bool> predicate) =>
+        _dataContext.Books.Where(predicate) as ICollection<Book>;
 
     public Book GetById(Guid id) => 
         _dataContext.Books.Find(id) ?? new();

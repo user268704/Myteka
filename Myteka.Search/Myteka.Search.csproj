@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Myteka.Configuration\Myteka.Configuration.csproj" />
+      <ProjectReference Include="..\Myteka.Infrastructure\Myteka.Infrastructure.csproj" />
       <ProjectReference Include="..\Myteka.Models\Myteka.Models.csproj" />
     </ItemGroup>
 

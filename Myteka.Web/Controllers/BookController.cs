@@ -95,6 +95,7 @@ public class BookController : BaseController
     /// Creates a book and writes it to the database
     /// </summary>
     /// <param name="book">The book being created</param>
+    /// TODO: contentID
     /// <returns></returns>
     /// <response code="200">The book has been added successfully</response>
     /// <response code="400">If the request is invalid</response>
@@ -105,7 +106,7 @@ public class BookController : BaseController
     public IActionResult CreateBook(BookRegisterModel book)
     {
         Book bookToCreate = _mapper.Map<Book>(book);
-        
+
         var bookValidator = new BookValidator();
         var validationResult = bookValidator.Validate(book);
 

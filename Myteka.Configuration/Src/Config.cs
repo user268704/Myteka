@@ -5,6 +5,9 @@ namespace Myteka.Configuration;
 
 public class Config : IConfiguration
 {
+    
+    const string ConfigFile = @"D:\Myteka\config.json";
+    
     private static Config Entity { get; set; }
     private ConfigModel MainModel { get; }
 
@@ -14,7 +17,7 @@ public class Config : IConfiguration
     {
         Init();
 
-        MainModel = Deserialize(ConfigText);
+        MainModel = DeserializeJson(ConfigText);
     }
 
     public static Config GetConfig()
@@ -36,7 +39,7 @@ public class Config : IConfiguration
 
     private void Init()
     {
-        string path = @"D:\Myteka\config.json";
+        string path = ConfigFile;
 
         if (File.Exists(path))
         {
@@ -49,8 +52,8 @@ public class Config : IConfiguration
 
         throw new FileNotFoundException("Config file not found");
     }
-
-    private ConfigModel Deserialize(string configText)
+    
+    private ConfigModel DeserializeJson(string configText)
     {
         ConfigModel config = JsonSerializer.Deserialize<ConfigModel>(configText);
         

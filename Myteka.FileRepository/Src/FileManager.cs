@@ -1,10 +1,21 @@
-using System.Net;
+using Myteka.Configuration;
+using Myteka.Configuration.Models;
 using Myteka.Models.InternalModels;
 
 namespace Myteka.FileRepository;
 
 public class FileManager
 {
+    ConfigModel Configuration;
+    private static List<string> AllowedExtensions;
+
+    public FileManager()
+    {
+        Configuration = Config.GetConfig().Get();
+        
+        SetAllowedExtensions();
+    }
+    
     /// <summary>
     /// Main method to save the file
     /// </summary>
@@ -34,4 +45,19 @@ public class FileManager
             Directory.Delete(directoryPath);
         }
     }
+
+    private void SetAllowedExtensions()
+    {
+        string allowedExtensions = File.ReadAllText(Configuration.Global.AllowedExtensions);
+        
+        AllowedExtensions = allowedExtensions.Split("\r\n").ToList();
+    }
+    
+    public string[] GetSupportedFileExtension()
+    {
+        return AllowedExtensions.ToArray();
+    }
+    
+    public bool IsExtensionAllowed(string fileName) =>
+        !AllowedExtensions.Any(fileName.EndsWith);
 }

@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Myteka.Infrastructure.Data;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Myteka.Infrastructure.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20221001083313_ContentUpdate7")]
+    partial class ContentUpdate7
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -109,7 +112,8 @@ namespace Myteka.Infrastructure.Migrations
 
                     b.HasIndex("AuthorId");
 
-                    b.HasIndex("ContentId");
+                    b.HasIndex("ContentId")
+                        .IsUnique();
 
                     b.ToTable("Books");
                 });
@@ -118,6 +122,9 @@ namespace Myteka.Infrastructure.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("BookId")
                         .HasColumnType("uuid");
 
                     b.Property<string>("FileName")
@@ -134,6 +141,8 @@ namespace Myteka.Infrastructure.Migrations
                         .HasColumnType("text");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("BookId");
 
                     b.HasIndex("MetadataId");
 
@@ -212,8 +221,8 @@ namespace Myteka.Infrastructure.Migrations
                         .IsRequired();
 
                     b.HasOne("Myteka.Models.InternalModels.Content", "Content")
-                        .WithMany()
-                        .HasForeignKey("ContentId")
+                        .WithOne()
+                        .HasForeignKey("Myteka.Models.InternalModels.Book", "ContentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -222,11 +231,19 @@ namespace Myteka.Infrastructure.Migrations
 
             modelBuilder.Entity("Myteka.Models.InternalModels.Content", b =>
                 {
+                    b.HasOne("Myteka.Models.InternalModels.Book", "Book")
+                        .WithMany()
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Myteka.Models.InternalModels.ContentMetadata", "Metadata")
                         .WithMany()
                         .HasForeignKey("MetadataId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Book");
 
                     b.Navigation("Metadata");
                 });
