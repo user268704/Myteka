@@ -7,10 +7,9 @@ namespace Myteka.Infrastructure.Data.Implementations;
 public class BookRepository : IBookRepository
 {
     private readonly DataContext _dataContext;
-    public BookRepository()
+    public BookRepository(DataContext dataContext)
     {
-        DataContext db = new DataContext();
-        _dataContext = db;
+        _dataContext = dataContext;
     }
     
     public ICollection<Book> GetAll(int count)

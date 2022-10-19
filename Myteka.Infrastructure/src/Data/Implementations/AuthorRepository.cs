@@ -9,10 +9,9 @@ public class AuthorRepository : IAuthorRepository
 {
         private DataContext _data;
     
-    public AuthorRepository()
+    public AuthorRepository(DataContext data)
     {
-        DataContext db = new DataContext();
-        _data = db;
+        _data = data;
     }
 
     public ICollection<Author> GetAuthors(int count) => 

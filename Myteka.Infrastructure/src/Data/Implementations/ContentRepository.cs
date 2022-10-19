@@ -9,9 +9,9 @@ namespace Myteka.Infrastructure.Data.Implementations;
 public class ContentRepository : IContentRepository
 {
     private readonly DataContext _dataContext;
-    public ContentRepository()
+    public ContentRepository(DataContext dataContext)
     {
-        _dataContext = new DataContext();
+        _dataContext = dataContext;
     }
     
     /// <summary>

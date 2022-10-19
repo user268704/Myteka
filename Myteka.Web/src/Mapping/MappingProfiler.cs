@@ -2,6 +2,7 @@ using AutoMapper;
 using Myteka.Models.ExternalModels;
 using Myteka.Models.ExternalModels.RegisterModels;
 using Myteka.Models.InternalModels;
+using Myteka.Models.InternalModels.Users;
 
 namespace Myteka.Web.Mapping;
 
@@ -42,7 +43,8 @@ public class MappingProfiler : Profile
         CreateMap<BookRegisterModel, Book>();
         CreateMap<AuthorRegisterModel, Author>();
         CreateMap<ContentRegisterModel, Content>();
+
+        CreateMap<User, UserRegisterModel>();
+        CreateMap<UserRegisterModel, User>();
     }
-    
-    
 }

@@ -11,17 +11,23 @@
     <ItemGroup>
       <PackageReference Include="AutoMapper" Version="11.0.1" />
       <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.10" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.0-rc.2.22472.11">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
       <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="src" />
+      <Folder Include="src\Filters" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\Myteka.Exceptions\Myteka.Exceptions.csproj" />
       <ProjectReference Include="..\Myteka.Infrastructure\Myteka.Infrastructure.csproj" />
       <ProjectReference Include="..\Myteka.Search\Myteka.Search.csproj" />
+      <ProjectReference Include="..\Myteka.Users\Myteka.Users.csproj" />
     </ItemGroup>
 
 </Project>
